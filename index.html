@@ -1,109 +1,370 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Wesley Cowan</title>
-  <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-</head>
-<body>
-  <header>
-    <h1>Wesley Cowan</h1>
-    <ul>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About me</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </header>
-  <main>
-    <div id="projects">
-      <div class="project">
-        <a href="http://18.191.173.183/login">
-          <img src="images/tictactoe.png">
-        </a>
-        <div class="project-description">
-          <h2>MultiGame (TicTacToe)</h2>
-          <p>Once users login, they are able to view a list of available games, join or create a game, and play with other users. User scores are logged after each section, and a scoreboard keeps track of player rank. Scoreboard can be sorted either by percentage or number of wins. I was especially involved in login and registration, game logic, and AWS deployment.</p>
-          <p>Features:
-              Angular framework and socket technology creates a seamless and interactive experience.
-              Login and registration with dynamically updating error messages.
-              Users can create games or view and join open games.
-              Scoreboard displays player ranking across multiple dimensions.
-              Chat feature during play.</p>
-            <p>Technologies:
-                HTML
-                CSS
-                JavaScript
-                Express
-                Angular
-                MongoDB
-                Bootstrap
-            </p>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Wesley Cowan Web Developer Portfolio">
+    <meta name="author" content="Wesley Cowan">
+    
+    <title>Wesley Cowan's Portfolio</title>
+    
+    <!-- {% load static %} -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.png">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Flavors|Rammetto+One|Syncopate" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    
+    
+
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+      <div class="container-fluid">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Wesley Cowan</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item" data-toggle="tooltip" title="About" data-placement="bottom">
+              <a class="nav-link js-scroll-trigger glow" href="#about"><i class="fa fa-user"></i></a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" title="Tech Skills" data-placement="bottom">
+              <a class="nav-link js-scroll-trigger glow" href="#skills"><i class="fa fa-laptop"></i></a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" title="Portfolio" data-placement="bottom">
+              <a class="nav-link js-scroll-trigger glow" href="#portfolio"><i class="fa fa-briefcase"></i></a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" title="Connect" data-placement="bottom">
+              <a class="nav-link js-scroll-trigger glow" href="#contact"><i class="fa fa-globe"></i></a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="project">
-        <a href="https://github.com/wncowan">
-          <img src="images/Spotify.png">
-        </a>
-        <div class="project-description">
-          <h2>Spotify:</h2>
-          <p>Spotify imitation site with functional registration / login, user playlists, and music search. The Napster API is used to pull music information and track samples.</p>
-          <p>
-              Features:
-              Login and registration with error messages.
-              User information and liked songs stored in database.
-              Music information and sample playback from Napster API.
-              Track page displaying song information and similar artists.
-              User page displaying all liked songs.
-              Artist page displaying popular tracks.
-              Dynamic search bar groups results by artist as user types.
-              Used Semantic UI for styling.</p>
-          <p>
-              Technologies:
-              HTML
-              CSS
-              Python
-              JavaScript
-              SQL</p>
+    </nav>
+    
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class=" text-uppercase">Who is Wesley Cowan?</h2>
+            <h3 class="section-subheading text-muted">Creative, efficient, and strategic web developer with a background in nuclear engineering, technical support, and teaching. Drawn to the overlap of programming, music, and math. Eager to leverage cutting edge technologies and discover new ways to implement them.</h3>
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                    <a href="#information" class="js-scroll-trigger"><img class="rounded-circle img-fluid" src="images/shibe1.jpg" alt=""></a>
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading title">Education</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="title2">Coding Dojo</p>
+                    <p class="timeline-info">14 week, onsite web-development bootcamp</p>
+                    <p class="title2">University of Illinois Urbana-Champaign</p>
+                    <p class="timeline-info">Bachelor of Science, Nuclear Engineering</p>
+                  </div>
+                  <div id="information"></div>
+                </div>
+              </li>
+              <li id="skills" class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="images/shibe2.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading title">Tech Skills</h4>
+                  </div>
+                  <div class="timeline-body">
+                      <p class="text-muted"><span class="title2">Languages</span><span class="timeline-info"> Python, JavaScript, C#</span></p>
+                      <p class="text-muted"><span class="title2">Frameworks</span><span class="timeline-info"> Flask, Django, .NET Core, Angular</span></p>
+                      <p class="text-muted"><span class="title2">Server Side</span><span class="timeline-info"> Linux Ubuntu, Node, Express, Nginx</span></p>
+		                  <p class="text-muted"><span class="title2">Databases</span><span class="timeline-info"> SQLite, MySQL, Django ORM, PostgreSQL, MongoDB/Mongoose, Entity Framework, Dapper</span></p>
+                      <p class="text-muted"><span class="title2">Front End</span><span class="timeline-info"> Bootstrap, jQuery</span></p>
+                      <p class="text-muted"><span class="title2">Markup</span><span class="timeline-info"> HTML5, CSS3</span></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="project">
-        <a href="https://github.com/wncowan">
-          <img src="images/RP.png">
-        </a>
-        <div class="project-description">
-          <h2>RallyPoint</h2>
-          <p>Once users login, they can add a new match, join an open match, view the scoreboard, and discuss in the forum. When adding a new match, the creator sets the time and location of the game. The creator can choose another registered user as an opponent, or select -Open- if the creator would like to leave the match open for other users to join.  Users can then view match details such as the location on a map generated by Google Maps API. Once the match has been played, the players enter the scores for the games. The players’ stats are updated on the global scoreboard.</p>
-          <p>
-              Features:
-              Login and registration with error messages.
-              Forum with two separate discussion channels
-              Google Maps API for match location and directions
-              Global Scoreboard to track players stats
-          </p>
-          <p>
-              Technologies:
-              HTML
-              CSS
-              C#
-              ASP.NET
-              Entity Framework
-              SQL
-          </p>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="text-uppercase">Projects</h2>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-play-circle-o fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/RP.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h5>RallyPoint</h5>
+              <p class="text-muted">table tennis</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-play-circle-o fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/tictactoe.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h5>MultiGame</h5>
+              <p class="text-muted">tic-tac-toe</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-play-circle-o fa-3x"></i>
+                </div>
+              </div>
+              <img id="dumb_spotify" class="img-fluid" src="images/Spotify.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h5>Spotify Clone</h5>
+              <p class="text-muted">music player</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <h2>Connect</h2>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-2 appear">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="http://www.twitter.com/" target="_blank" data-target="tool tip" title="Click to open Twitter and say hello!">
+                  <i class="glow fa fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 appear">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.github.com/wncowan" target="_blank" data-target="tool tip" title="Click here to visit Wesley Cowan's GitHub">
+                  <i class="glow fa fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 appear">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/wesleycowan/" data-target="tool tip" title="Click to visit Wesley Cowan's Linkedin page" target="_blank">
+                  <i class="glow fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="mailto:wncowan@gmail.com" target="_blank" data-target="tool tip" title="This will open your default mail client.">            
+                  <i class="glow fa fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="col-sm-12">
+            <span class="copyright">&copy;2018</span>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- MODALS MODALS MODALS -->
+
+    <!-- RP Modal -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  
+                  <h2 class="text-uppercase">RallyPoint</h2>
+                  <p class="item-intro text-muted">table tennis matchmaking and forum</p>
+                  <div class="project-box">
+                    <a href="/"><img class="img-fluid d-block mx-auto" src="images/RP.png" alt=""></a>
+                    <!-- <p class="instructions"><em>Click the image, then click "login" for a demo. To return, click "logout".</em></p> -->
+                  </div>
+
+                  <hr>
+                  <p>Once users login, they can add a new match, join an open match, view the scoreboard, and discuss in the forum. When adding a new match, the creator sets the time and location of the game. The creator can choose another registered user as an opponent, or select -Open- if the creator would like to leave the match open for other users to join.  Users can then view match details such as the location on a map generated by Google Maps API. Once the match has been played, the players enter the scores for the games. The players’ stats are updated on the global scoreboard.</p>
+                  <p>Features: Login and registration with error messages, forum with two separate discussion channels, Google Maps API for match location and directions, Global Scoreboard to track players stats</p>
+                
+                  <ul class="list-inline">
+                    <li>Date: May 2018</li>
+                    <li>Technologies: HTML, CSS, C#, ASP.NET, Entity Framework, SQL</li>
+                    <!-- <li>Deployment: <a href="" target="blank"></a></li>
+                    <li>GitHub: <a href="" target="blank"></a></li> -->
+                  </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="about">
-      <h2>About me</h2>
-      <p>Hi, I am Wesley Cowan and I am a full-stack web developer with a background in nuclear engineering and education. I have always been drawn to the overlap of math, music, and programming. My dream is to either work in the field of computational fluid dynamics or develop virtual studio technolgy. I recently graduated from Coding Dojo where I developed a broad range of skills ranging from UX and design to back end development. I am excited to take on new challenges and to enrich my passion for coding.</p>
+    <!-- MG Modal -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">MultiGame</h2>
+                 
+                  <p class="item-intro text-muted">real-time tic-tac-toe game and chat</p>
+                
+
+                  <div class="project-box">
+                    <a href="/"><img class="img-fluid d-block mx-auto" src="images/tictactoe.png" alt="MultiGame  screen shot"></a>
+                    <!-- <p class="instructions">Click the image to play.  Use the controls on the top left to play, and click the red button on the bottom to bring you back when you're done.</p> -->
+                  </div>
+                  
+                  <hr>
+                  <p>Once users login, they are able to view a list of available games, join or create a game, and play with other users. User scores are logged after each section, and a scoreboard keeps track of player rank. Scoreboard can be sorted either by percentage or number of wins. I was especially involved in login and registration, game logic, and AWS deployment.</p>
+                  
+                  <p>Features: Angular framework and socket technology creates a seamless and interactive experience, login and registration with dynamically updating error messages, Users can create games or view and join open games, scoreboard displays player ranking across multiple dimensions, chat feature during play</p>
+
+                  <ul class="list-inline">
+                    <li>Date: April 2018</li>
+                    <li>Technologies: HTML, CSS, JavaScript, Express, Angular, MongoDB, Bootstrap</li>
+                    <!-- <li>Deployment: AWS and Digital Ocean, Linux Ubuntu</li> -->
+                    <!-- <li>GitHub: <a href="https://github.com/" target="blank">https://github.com/</a></li> -->
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div id="contact">
-      <h2>Contact</h2>
-      <a href="mailto:wncowan@gmail.com">wncowan@gmail.com</a>
-      <a href="https://www.linkedin.com/in/wesley-cowan-56980086/">LinkedIn</a>
-      <a href="https://github.com/wncowan">Github</a>
+    <!-- Spotify Modal -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">Spotify Clone</h2>
+                  <p class="item-intro text-muted">music player using Napster API</p>
+                  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/XvSxZLzXVRs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                  <a href="/"><img class="img-fluid d-block mx-auto" src="images/Spotify.png" alt=""></a>
+                  <hr>
+                  <p>Spotify imitation site with functional registration / login, user playlists, and music search. The Napster API is used to pull music information and track samples.</p>
+                  <p>Features: Login and registration with error messages, user information and liked songs stored in database, music information and sample playback from Napster API, track page displaying song information and similar artists, user page displaying all liked songs, artist page displaying popular tracks, dynamic search bar groups results by artist as user types, Semantic UI for styling</p>
+                  <!-- <p>Click on the video for a short demo.</p> -->
+                  <ul class="list-inline">
+                    <li>March 2018</li>
+                    <li>Technologies:HTML, CSS, Python, JavaScript, SQL</li>
+                    <!-- <li>Deployment: Azure, Linux Ubuntu</li> -->
+                    <!-- <li>GitHub: <a href="https://github.com/" target="blank">https://github.com/</a></li> -->
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </main>
-</body>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/portfolio.js"></script>
+
+    
+
+  </body>
+
 </html>
